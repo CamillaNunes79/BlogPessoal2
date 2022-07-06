@@ -18,7 +18,7 @@ return this.http.post<UsuarioLogin>('http://localhost:8080/usuarios/logar', Usua
   }
 
   cadastrar(usuario: Usuario): Observable<Usuario>{
-return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', Usuario)
+return this.http.post<Usuario>('http://localhost:8080/usuarios/cadastrar', usuario)
   }
 
 }
